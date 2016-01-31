@@ -26,6 +26,7 @@ extension UIApplication {
             case .Next(let value):
                 self.networkActivityIndicatorVisible = value
             case .Error:
+                self.networkActivityIndicatorVisible = false
                 break
             case .Completed:
                 break
